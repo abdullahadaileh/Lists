@@ -1,97 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="GettyImages-1288858945_8by10.webp">
-    <title>Aqaba City</title>
+    <title>أنواع القوائم في HTML</title>
     <style>
-        body {
-            font-family: "Poppins", sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-        header {
-            background-color: #0077b6;
-            color: white;
-            padding: 20px;
-            font-size: 1.8em;
-            font-weight: bold;
-        }
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 90px 10px 90px 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            gap: 20px;
-        }
-        img {
-            width: 350px;
-            height: auto;
-            border-radius: 90px 10px 90px 10px;
-            margin-right: -30px;
-        }
-        .text {
-            text-align: left;
-            max-width: 500px;
-        }
-        .link {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 20px;
-            background-color: #0077b6;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .link:hover {
-            background-color: #005f8a;
-        }
-        a{
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                text-align: center;
-            }
-            img {
-                width: 100%;
-            }
-            .text {
-                text-align: center;
-            }
-        }
+        body { font-family: Arial, sans-serif; direction: rtl; text-align: right; }
+        ul, ol { margin-bottom: 20px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
     </style>
 </head>
 <body>
-
-    <header><marquee>Aqaba</marquee></header>
-    <div class="container">
-        <div class="text">
-            <h2>Discover Aqaba</h2>
-            <p>
-                Aqaba is Jordan’s only coastal city, nestled along the stunning shores of the Red Sea. 
-                Renowned for its crystal-clear waters, vibrant coral reefs, and rich history, Aqaba offers 
-                an unmatched blend of adventure, relaxation, and cultural experiences.
-            </p>
-            <a class="link" href="https://en.wikipedia.org/wiki/Aqaba" target="_blank">Explore More</a>
-        </div>
-        <img src="GettyImages-1288858945_8by10.webp" alt="Aqaba City">
-    </div>
-    <footer>
-        Created by: <a href="https://abdullahadaileh.github.io/Portfolio/" >Abdallah ALAdaileh</a>
-    </footer>
+    <h2 align="center">أنواع القوائم في HTML</h2>
+    <br>
+    
+    <h3>✅ القائمة غير المرتبة &lt;ul&gt;</h3>
+    <p>بتكون بدون ترتيب معين (نقاط أو رموز).</p>
+    <ul>
+        <li>العنصر الأول</li>
+        <li>العنصر الثاني</li>
+    </ul>
+    <pre>
+&lt;ul&gt;
+    &lt;li&gt;العنصر الأول&lt;/li&gt;
+    &lt;li&gt;العنصر الثاني&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+    
+    <h3>✅ القائمة المرتبة &lt;ol&gt;</h3>
+    <p>بتكون فيها ترتيب رقمي أو أبجدي.</p>
+    <ol>
+        <li>العنصر الأول</li>
+        <li>العنصر الثاني</li>
+    </ol>
+    <pre>
+&lt;ol&gt;
+    &lt;li&gt;العنصر الأول&lt;/li&gt;
+    &lt;li&gt;العنصر الثاني&lt;/li&gt;
+&lt;/ol&gt;
+    </pre>
+    
+    <h3>✅ أنواع القائمة غير المرتبة (list-style-type)</h3>
+    
+    <h4>🔘 disc (الافتراضي)</h4>
+    <ul style="list-style-type: disc;">
+        <li>العنصر الأول</li>
+        <li>العنصر الثاني</li>
+    </ul>
+    <pre>
+&lt;ul style="list-style-type: disc;"&gt;
+    &lt;li&gt;العنصر الأول&lt;/li&gt;
+    &lt;li&gt;العنصر الثاني&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+    
+    <h4>🔘 circle (دائرة فاضية)</h4>
+    <ul style="list-style-type: circle;">
+        <li>العنصر الأول</li>
+        <li>العنصر الثاني</li>
+    </ul>
+    <pre>
+&lt;ul style="list-style-type: circle;"&gt;
+    &lt;li&gt;العنصر الأول&lt;/li&gt;
+    &lt;li&gt;العنصر الثاني&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+    
+    <h4>🔘 square (مربع)</h4>
+    <ul style="list-style-type: square;">
+        <li>العنصر الأول</li>
+        <li>العنصر الثاني</li>
+    </ul>
+    <pre>
+&lt;ul style="list-style-type: square;"&gt;
+    &lt;li&gt;العنصر الأول&lt;/li&gt;
+    &lt;li&gt;العنصر الثاني&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+    
+    <h4>🔘 none (بدون رموز)</h4>
+    <ul style="list-style-type: none;">
+        <li>العنصر الأول</li>
+        <li>العنصر الثاني</li>
+    </ul>
+    <pre>
+&lt;ul style="list-style-type: none;"&gt;
+    &lt;li&gt;العنصر الأول&lt;/li&gt;
+    &lt;li&gt;العنصر الثاني&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+    
+    <h4>🔘 list-style-image (استخدام صورة كرمز)</h4>
+    <ul style="list-style-image: url('icon.png');">
+        <li>العنصر الأول</li>
+        <li>العنصر الثاني</li>
+    </ul>
+    <pre>
+&lt;ul style="list-style-image: url('icon.png');"&gt;
+    &lt;li&gt;العنصر الأول&lt;/li&gt;
+    &lt;li&gt;العنصر الثاني&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
 </body>
 </html>
